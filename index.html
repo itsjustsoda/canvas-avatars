@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- TODO: Fix semantics, add aria to comply with CDS, ADA, FAA, FCC, etc. -->
+<!-- I spent *way* too much effort on this page. -->
+
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta property="fb:admins" content="100001035420809" />
+<link href='/favicon.ico' rel='shortcut icon'>
+<link href='spinny.css' rel='stylesheet' type='text/css' media='all'>
+<title>Spinny Avatar!</title>
+<header>
+  <h1>Spinning Avatars</h1>
+</header>
+<section>
+    <div id='avatars'>
+      <div>
+        <img src='avatar_0.gif' alt='spinny!'/>
+        <img src='avatar_1.gif' alt='spinny!'/>
+        <img src='avatar_2.gif' alt='spinny!'/>
+        <img src='avatar_3.gif' alt='spinny!'/>
+        <img src='avatar_4.gif' alt='spinny!'/>
+        <img src='avatar_5.gif' alt='spinny!'/>
+      </div>
+      <div>
+        <img src='avatar_6.gif' alt='spinny!'/>
+        <img src='avatar_7.gif' alt='spinny!'/>
+        <img src='avatar_8.gif' alt='spinny!'/>
+        <img src='avatar_9.gif' alt='spinny!'/>
+        <img src='avatar_10.gif' alt='spinny!'/>
+        <img src='avatar_11.gif' alt='spinny!'/>
+      </div>
+      <div>
+        <img src='avatar_12.gif' alt='spinny!'/>
+        <img src='avatar_13.gif' alt='spinny!'/>
+        <img src='avatar_14.gif' alt='spinny!'/>
+        <img src='avatar_15.gif' alt='spinny!'/>
+        <img src='avatar_16.gif' alt='spinny!'/>
+        <img src='avatar_17.gif' alt='spinny!'/>
+      </div>
+      <div>
+        <img src='avatar_18.gif' alt='spinny!'/>
+        <img src='avatar_19.gif' alt='spinny!'/>
+        <img src='avatar_20.gif' alt='spinny!'/>
+        <img src='avatar_21.gif' alt='spinny!'/>
+        <img src='avatar_22.gif' alt='spinny!'/>
+        <img src='avatar_23.gif' alt='spinny!'/>
+      </div>
+      <div>
+        <img src='avatar_24.gif' alt='spinny!'/>
+        <img src='avatar_25.gif' alt='spinny!'/>
+        <img src='avatar_26.gif' alt='spinny!'/>
+        <img src='avatar_27.gif' alt='spinny!'/>
+        <img src='avatar_28.gif' alt='spinny!'/>
+        <img src='avatar_29.gif' alt='spinny!'/>
+      </div>
+      <div>
+        <img src='avatar_30.gif' alt='spinny!'/>
+        <img src='avatar_31.gif' alt='spinny!'/>
+        <img src='avatar_32.gif' alt='spinny!'/>
+        <img src='avatar_33.gif' alt='spinny!'/>
+        <img src='avatar_34.gif' alt='spinny!'/>
+        <img src='avatar_35.gif' alt='spinny!'/>
+      </div>
+    </div>
+  <article>
+    <p>
+      I just learned that Canvas has an API so after spending some time
+      learning ImageMagick, I made my Canvas avatar point to a random one of these.
+    </p>
+    <p>
+      These load out of order and one is probably cached so there will probably
+      be an annoying offset. :(
+    </p>
+    <p>
+      Feel free to use these are your avatar on Canvas. Right now there's a cron
+      job changing <a href='avatar.gif'>cnvs.johnfresco.com/avatar.gif</a> so 
+      you can point your avatar to that for a different color every minute.
+      Maybe I'll eventually make the server truely serve a random color on
+      each request.
+    </p>
+    <p>
+      I'm not aware of any way to use a URL for your avatar picture except
+      through the API so here's some code for that if you want to use it.
+    </p>
+    <code>
+      <pre>
+curl "https://utah.instructure.com/api/v1/users/&lt;id&gt;" \
+  -X PUT \
+  -F 'user[avatar][url]=http://cnvs.johnfresco.com/avatar.gif' \
+  -H 'Authorization: Bearer &lt;token&gt;'</pre>
+    </code>
+    <p>
+      You'll need to generate a token
+      <a href='https://utah.instructure.com/profile/settings#access_tokens_holder'>here.</a>
+      <strong>"self"</strong> should work in place of your id but I haven't tested
+      that yet.
+    </p>
+    <p>
+      I'll put up the ImagickMagick Script if anyone cares for it.
+    </p>
+    <p>
+      <em>
+        I honestly don't know why I spent so much effort on this page.
+      </em>
+    </p>
+  </article>
+</section>
+<footer>
+  <div>
+    <h1>Stuff</h1>
+    <p>
+      These images are derived from the
+      <a href='https://github.com/instructure/canvas-lms'>Canvas</a>
+      default avatar image which I assumed is AGPL so I suppose that means the
+      images are under the <a href='AGPLv3.html'>AGPLv3.</a>
+      Someone correct me if I'm wrong.
+    </p>
+  </div>
+</footer>
+

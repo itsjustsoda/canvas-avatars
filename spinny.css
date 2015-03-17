@@ -1,0 +1,77 @@
+* {box-sizing: border-box;}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	line-height: 1.5;
+
+	font-family: sans-serif;
+	color: #333;
+}
+
+header {
+	margin: auto;
+	padding: 0 1rem;
+	max-width: 30rem;
+	border-bottom: solid #f0f0f0 1px;
+}
+
+section {
+	margin: auto;
+	max-width: 30rem;
+}
+
+article {
+	margin: auto;
+	font-size: 1.25rem;
+}
+
+article p {
+	padding: 0 1rem;
+	text-align: justify;
+	hyphens: auto;
+}
+
+#avatars {
+	padding: 1rem 0;
+	text-align: center;
+
+	border-bottom: solid #f0f0f0 1px;
+}
+
+pre {
+	display: block;
+	margin: 1rem;
+	padding: 1rem;
+	border: dashed #eee 2px;
+	background: #f9f9f9;
+
+	font-size: 0.75rem;
+
+	overflow: scroll;
+}
+
+footer {
+	background: #f0f0f0;
+	font-size: 0.75rem;
+}
+
+footer div {
+	margin: auto;
+	padding: 1rem;
+	max-width: 30rem;
+}
+
+footer h1 {
+	margin: 0;
+	font-size: 1rem;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+a {
+	color: inherit;
+}
