@@ -4,7 +4,6 @@
   "description": "Responds with a spinning version of the default Canvas avatar.",
   "main": "avatars.js",
   "dependencies": {
-    "config": "^1.12.0",
     "restify": "^3.0.1"
   },
   "devDependencies": {},

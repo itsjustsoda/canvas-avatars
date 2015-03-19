@@ -1,5 +1,4 @@
 var restify = require('restify');
-var config  = require('config');
 var fs      = require('fs')
 
 var randomInt = (max) => Math.floor(Math.random() * max);
@@ -23,4 +22,4 @@ server.get(/^\/.*/, restify.serveStatic({
   default: 'index.html'
 }));
 
-server.listen(config.get('port'));
+server.listen(process.env.PORT || 8162);
