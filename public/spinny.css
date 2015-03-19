@@ -75,3 +75,10 @@ footer p {
 a {
 	color: inherit;
 }
+
+.update {
+	margin: 1rem;
+  padding: 1rem;
+	border: dashed #eee 2px;
+	background: #f9f9f9;
+}
